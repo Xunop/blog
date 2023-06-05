@@ -100,6 +100,8 @@ pagination_dir: page
 include:
 exclude:
 ignore:
+  - "**/scripts/*"
+  - "*.sh"
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/

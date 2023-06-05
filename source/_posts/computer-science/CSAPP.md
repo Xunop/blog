@@ -7,12 +7,14 @@ categories:
 tags:
 - 计算机科学
 - CSAPP
+description: test
 ---
 
 # 深入理解计算机系统
 
 ### 程序的机器级表示
 
+<!-- more -->
 从源代码转为机器代码的过程：
 
 1. **预处理器**会扩展源代码，插入所有用`#include`指令的文件，扩展所有用`#define`声明指定的宏。

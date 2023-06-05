@@ -1,3 +1,9 @@
 [submodule "themes/even"]
 	path = themes/even
 	url = git@github.com:Xunop/hexo-theme-even.git
+[submodule "notes"]
+	path = notes
+	url = git@github.com:Xunop/notes.git
+[submodule "my_scripts"]
+	path = my_scripts
+	url = git@github.com:Xunop/hexo-format.git

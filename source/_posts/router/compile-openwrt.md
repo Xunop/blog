@@ -1,4 +1,3 @@
-
 ---
 title: 编译 Openwrt 固件
 cover: https://cos.asuka-xun.cc/blog/assets/compile-openwrt.jpg
