@@ -1,4 +1,5 @@
 ---
+description: 与十进制小数一样，二进制小数点左边为正幂，小数点右边为负幂，幂的底数为 2。 二进制转十进制
 title: 二进制小数及 IEEE 浮点表示
 cover: https://cos.asuka-xun.cc/blog/assets/ieee_floating-point_representation.jpg
 date: 2022/10/19
@@ -16,7 +17,6 @@ tags:
 
 与十进制小数一样，二进制小数点左边为正幂，小数点右边为负幂，幂的底数为 2。
 
-<!-- more -->
 ## 二进制小数与十进制转换
 
 **二进制转十进制**
@@ -116,4 +116,12 @@ $$
 
 参考文章：
 [十进制小数转化为二进制小数 | 菜鸟教程 (runoob.com)](https://www.runoob.com/w3cnote/decimal-decimals-are-converted-to-binary-fractions.html)
-[【CSAPP-深入理解计算机系统】2-4.浮点数(下)_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1zK4y1j7Cn/?vd_source=b3e689189f76e8e365d80b621ff607a3)
+[【CSAPP-深入理解计算机系统】2-4.浮点数(下)_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1zK4y1j7Cn/?vd_source=b3e689189f76e8e365d80b621ff607a3)title: 深入了解计算机系统笔记 
+cover: https://cos.asuka-xun.cc/blog/assets/CSAPP.jpg
+date: 2022/12/26
+categories:
+
+- [二进制杂谈]
+  tags:
+- 计算机科学
+- CSAPP

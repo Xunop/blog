@@ -1,4 +1,5 @@
 ---
+description: 舍入运算是我们平时使用的比较多的运算，最近看 CSAPP 学到了一些关于舍入运算的更详细的内容，在这里记录一下。 IEEE754 定义了四种不同的舍入方式：
 title: 向偶数舍入
 cover: https://cos.asuka-xun.cc/blog/assets/round-to-even.jpg
 date: 2022/10/10
@@ -14,7 +15,6 @@ tags:
 
 舍入运算是我们平时使用的比较多的运算，最近看 CSAPP 学到了一些关于舍入运算的更详细的内容，在这里记录一下。
 
-<!-- more -->
 ## 舍入方式
 
 IEEE754 定义了四种不同的舍入方式：

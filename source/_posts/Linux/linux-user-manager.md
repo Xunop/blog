@@ -1,4 +1,5 @@
 ---
+description: 本篇用于总结 Linux 用户管理常见操作。以下使用 Ubuntu 系统为例。 Ubuntu 添加用户有两条命令。`adduser` 和 `useradd` 都可以创建用户，Ubuntu 则通常使用 `adduser`，在其他 Linux 发行版本中通常使用 `useradd`。
 title: Linux 用户管理
 cover: https://cos.asuka-xun.cc/blog/assets/linux_user.jpg
 date: 2022/8/21 19:44
@@ -13,7 +14,6 @@ tags:
 本篇用于总结 Linux 用户管理常见操作。以下使用 Ubuntu 系统为例。
 
 ## Linux 系统用户账号的管理
-<!-- more -->
 
 ### 1、添加用户
 

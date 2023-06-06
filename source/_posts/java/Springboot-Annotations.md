@@ -1,4 +1,5 @@
 ---
+description: 首先了解一下注解。 这个是`Controller`的源代码，以它为例。
 title: Springboot常用注解
 cover: https://cos.asuka-xun.cc/blog/assets/springbootannotations.jpg
 date: 2022/7/8 13:00
@@ -13,7 +14,6 @@ tags:
 ## Java注解（Annotation）
 
 首先了解一下注解。
-<!-- more -->
 
 这个是`Controller`的源代码，以它为例。
 

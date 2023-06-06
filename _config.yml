@@ -102,6 +102,7 @@ exclude:
 ignore:
   - "**/scripts/*"
   - "*.sh"
+  - "**/notes/*"
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/

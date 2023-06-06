@@ -1,4 +1,5 @@
 ---
+description: MyBatisPlus是MyBatis的增强工具，在 MyBatis 的基础上只做增强不做改变，为简化开发、提高效率而生。
 title: MyBatisPlus常用操作
 cover: https://cos.asuka-xun.cc/blog/assets/mybatisplus.jpg
 date: 2022/7/26 00:54
@@ -13,7 +14,6 @@ tags:
 **MyBatisPlus**是**MyBatis**的增强工具，在 MyBatis 的基础上只做增强不做改变，为简化开发、提高效率而生。
 
 ## MyBatisPlus配置（后面有提到再补）
-<!-- more -->
 
 ```yaml
 #MyBatis-Plus相关配置

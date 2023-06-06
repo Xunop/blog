@@ -8,11 +8,11 @@ tags:
 - 路由器
 - OpenWrt
 ---
-# 编译 Openwrt 固件
 
 前提条件：
 
 - 具有 Linux 系统，我使用的是 WSL，WSL 的安装可以去官网看：[Install WSL | Microsoft Docs](https://docs.microsoft.com/en-us/windows/wsl/install)
+<!-- more -->
 
   > 注意：使用 Linux 系统编译是**不能直接使用** root 用户的，WSL 默认使用的不是 root 用户。
   >

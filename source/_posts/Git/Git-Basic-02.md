@@ -1,4 +1,5 @@
 ---
+description: Git 有三种状态，已提交（committed）、已修改（modified） 和 已暂存（staged）。 - 已修改表示修改了文件，但还没保存到数据库中。
 title: Git 基础——Git 项目的三个阶段
 cover: https://cos.asuka-xun.cc/blog/assets/Git-Base-02.jpg
 
@@ -13,7 +14,6 @@ tags:
 ## Git 的三种状态
 
 Git 有三种状态，**已提交（committed）**、**已修改（modified）** 和 **已暂存（staged）**。
-<!-- more -->
 
 - 已修改表示修改了文件，但还没保存到数据库中。
 

@@ -1,4 +1,5 @@
 ---
+description: 有两种创建仓库的方法： 1. 将没有进行版本控制的本地目录转换为 Git 仓库；
 title: Git 基础———创建仓库及提交更新
 cover: https://cos.asuka-xun.cc/blog/assets/Git-Base-03.jpg
 date: 2022/8/23 1:06
@@ -12,7 +13,6 @@ tags:
 ## 创建仓库
 
 有两种创建仓库的方法：
-<!-- more -->
 
 1. 将没有进行版本控制的本地目录转换为 Git 仓库；
 

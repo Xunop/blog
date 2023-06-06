@@ -1,4 +1,5 @@
 ---
+description: 我们通常使用 SSH 远程登录服务器。 一般为了安全起见，不建议在 SSH 连接中使用 root 用户登录，我们一般都是使用其他用户进行操作。
 title: Linux SSH远程配置及登录
 cover: https://cos.asuka-xun.cc/blog/assets/linux-ssh-config.jpg
 date: 2022/8/22 2:44
@@ -13,7 +14,6 @@ tags:
 ## 什么是 SSH
 
 **Secure Shell**（安全外壳协议，简称**SSH**）是一种加密的网络传输协议，可在不安全的网络中为网络服务提供安全的传输环境[[1\]](https://zh.m.wikipedia.org/zh-hans/Secure_Shell#cite_note-rfc4251-1)。SSH最常见的用途是远程登录系统，人们通常利用SSH来传输命令行界面和远程执行命令。看看定义：[Secure Shell - 维基百科，自由的百科全书 (wikipedia.org)](https://zh.m.wikipedia.org/zh-hans/Secure_Shell)
-<!-- more -->
 
 我们通常使用 SSH 远程登录服务器。
 

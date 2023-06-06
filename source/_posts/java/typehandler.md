@@ -1,4 +1,5 @@
 ---
+description: 最近写的一个项目报错： 情况是这样的：我准备测试一个接口，其中测试传的一个参数类型是`json`格式，我在程序中实体类对应的字段也设置成了`JSONObject`来接收这个字段，如果我设置成`String`或者其他类型时会直接警告：
 title: 关于字段类型处理器
 date: 2022/7/22 11:35
 categories:
@@ -11,7 +12,6 @@ tags:
  最近写的一个项目报错：
 
 ```java
-<!-- more -->
 2022-07-22 00:23:00.295 ERROR 21860 --- [0.1-8081-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
 ### Error updating database.  Cause: java.lang.IllegalStateException: Type handler was null on parameter mapping for property 'reviewSettings'. It was either not specified and/or could not be found for the javaType (com.alibaba.fastjson.JSONObject) : jdbcType (null) combination.
 ### The error may exist in com/sast/crs/mapper/AdminMapper.java (best guess)

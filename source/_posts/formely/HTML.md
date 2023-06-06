@@ -1,4 +1,5 @@
 ---
+description: --- ---
 title: HTML（不建议观看）
 date: 2022/3/20 22:27
 categories:
@@ -11,7 +12,6 @@ tags:
 
 [1. 标题标签](http://xjmdbd.xyz/wp-admin/post.php?post=42&action=edit#1)  
 [2. 段落和换行标签](http://xjmdbd.xyz/wp-admin/post.php?post=42&action=edit#2)  
-<!-- more -->
 [3. 标题标签](http://xjmdbd.xyz/wp-admin/post.php?post=42&action=edit#3)  
 [4.`<div>`和`<span>`标签](http://xjmdbd.xyz/wp-admin/post.php?post=42&action=edit#4)  
 [5. 图像标签](http://xjmdbd.xyz/wp-admin/post.php?post=42&action=edit#5)  
