@@ -18,16 +18,13 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+      - name: Checkout submodules
+        run: git submodule update --init --recursive
 
-      - name: Install dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y git
       - name: Run format script
         run: |
-          ls -al
-          echo "$pwd"
           cd my_scripts
+          ls -al
           chmod +x format.sh
           ./format.sh
 
