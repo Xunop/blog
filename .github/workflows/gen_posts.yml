@@ -27,7 +27,8 @@ jobs:
           cd my_scripts
           ls -al
           chmod +x format.sh
-          ./format.sh
+          cat format.sh
+          sh format.sh
 
       # Runs a set of commands using the runners shell
       - name: Commit changes
