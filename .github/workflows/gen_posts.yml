@@ -25,6 +25,8 @@ jobs:
           sudo apt-get install -y git
       - name: Run format script
         run: |
+          cd blog
+          pwd
           chmod +x ./my_scripts/format.sh
           ./my_scripts/format.sh -a
 
@@ -37,6 +39,6 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+          github_token: ${{ secrets.PAT }}
+          branch: main
       
