@@ -25,8 +25,8 @@ jobs:
           sudo apt-get install -y git
       - name: Run format script
         run: |
-          cd blog
-          pwd
+          ls -al
+          echo "$pwd"
           chmod +x ./my_scripts/format.sh
           ./my_scripts/format.sh -a
 
