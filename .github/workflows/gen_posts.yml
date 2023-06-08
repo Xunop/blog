@@ -25,7 +25,6 @@ jobs:
       - name: Run format script
         run: |
           cd my_scripts
-          ls -al
           chmod +x format.sh
           sh format.sh
 
