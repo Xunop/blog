@@ -38,7 +38,7 @@ jobs:
         run: |
           pwd
           ls -al
-          ls source/_post/test/test.md
+          ls source/_post/test/
           cat source/_post/test/test.md
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
