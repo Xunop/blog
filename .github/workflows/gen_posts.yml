@@ -29,7 +29,9 @@ jobs:
       - name: Run format script
         run: |
           cd notes
+          git status --short
           chmod +x auto_format.sh
+          cat auto_format.sh
           bash auto_format.sh
           cd ..
 
