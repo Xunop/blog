@@ -21,6 +21,15 @@ jobs:
         with:
           submodules: true
           
+          
+      - name: test
+        run: |
+          pwd
+          cd notes
+          ls -al
+          cat test/test.md
+          cd ..
+
       - name: install dep
         run: |
           sudo apt-get update
@@ -37,6 +46,7 @@ jobs:
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
+          git status
           git add .
           git commit -a -m "Add changes"
       - name: Push changes
