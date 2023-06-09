@@ -21,10 +21,6 @@ jobs:
         with:
           submodules: true
           
-      - name: update repo
-        run: |
-          git submodule update --remote --rebase
-          
       - name: install dep
         run: |
           sudo apt-get update
