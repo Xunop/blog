@@ -21,6 +21,10 @@ jobs:
         with:
           submodules: true
           
+      - name: update repo
+        run: |
+          git submodule update --remote --rebase
+          
       - name: install dep
         run: |
           sudo apt-get update
@@ -28,9 +32,9 @@ jobs:
 
       - name: Run format script
         run: |
-          cd my_scripts
-          chmod +x format.sh
-          bash format.sh
+          cd notes
+          chmod +x auto_format.sh
+          bash auto_format.sh
 
       # Runs a set of commands using the runners shell
       - name: Commit changes
