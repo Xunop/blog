@@ -30,14 +30,11 @@ jobs:
           
       - name: sync notes
         run: |
-          git submodule update --remote
+          git submodule update --remote --rebase
 
       - name: Run format script
         run: |
           cd notes
-          echo '----test-----'
-          git log
-          echo '---test-----'
           git diff HEAD^ HEAD --name-only
           chmod +x auto_format.sh
           bash auto_format.sh
