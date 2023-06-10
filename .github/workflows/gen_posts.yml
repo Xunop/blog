@@ -25,11 +25,18 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install bash
-          git submodule update --remote --rebase
+          
+      - name: sync notes
+        run: |
+          git submodule update --remote
 
       - name: Run format script
         run: |
           cd notes
+          git branch -a
+          echo '----debug----'
+          cat test/test.md
+          echo '----debug----'
           git status --short
           chmod +x auto_format.sh
           bash auto_format.sh
