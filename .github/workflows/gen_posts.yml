@@ -34,11 +34,10 @@ jobs:
       - name: Run format script
         run: |
           cd notes
+          echo '----test-----'
+          git log
+          echo '---test-----'
           git diff HEAD^ HEAD --name-only
-          echo '----debug----'
-          cat test/test.md
-          echo '----debug----'
-          git status --short
           chmod +x auto_format.sh
           bash auto_format.sh
           cd ..
