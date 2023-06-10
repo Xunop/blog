@@ -33,8 +33,7 @@ jobs:
       - name: Run format script
         run: |
           cd notes
-          git branch -a
-          git checkout main
+          git diff HEAD^ HEAD --name-only
           echo '----debug----'
           cat test/test.md
           echo '----debug----'
