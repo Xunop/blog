@@ -1,11 +1,8 @@
----
-date: 2023-06-09
-title: 
----
+-e --- date: 2023-06-10 title: ---
 
 git checkout main
-git status --short
-files=$(git status --short | awk '{print $2}')
+git diff HEAD^ HEAD --name-only
+files=$(git diff HEAD^ HEAD --name-only)
 
 <!-- more -->
 echo "files: $files"
