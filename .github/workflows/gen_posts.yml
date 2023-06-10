@@ -34,6 +34,7 @@ jobs:
         run: |
           cd notes
           git branch -a
+          git checkout main
           echo '----debug----'
           cat test/test.md
           echo '----debug----'
