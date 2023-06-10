@@ -25,6 +25,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install bash
+          bash
           
       - name: sync notes
         run: |
