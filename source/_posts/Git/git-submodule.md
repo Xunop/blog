@@ -1,6 +1,7 @@
 ---
 date: 2023-06-18
 title: git
+description: 在 git 仓库中，我们可以嵌入一些子模块。使用 `git submodule` 来完成这个操作。 之后在项目目录中会出现 `.gitmodules` 文件，这里存放子模块的 URL 及其在父项目中的路径。
 ---
 # git submodule 基本使用
 
@@ -52,5 +53,3 @@ title: git
 之后可以执行 `git rm <submodule-path>` 移除这个文件夹。
 
 更多内容可以查看 git book 中对 git submodule 的讲解：[git-submodule](https://git-scm.com/book/zh/v2/Git-工具-子模块)
-
-test
