@@ -1,6 +1,6 @@
 ---
-date: 2023-06-18
-title: git
+date: 2023-06-21
+title: # git submodule 基本使用
 description: 在 git 仓库中，我们可以嵌入一些子模块。使用 `git submodule` 来完成这个操作。 之后在项目目录中会出现 `.gitmodules` 文件，这里存放子模块的 URL 及其在父项目中的路径。
 ---
 # git submodule 基本使用
@@ -15,7 +15,7 @@ description: 在 git 仓库中，我们可以嵌入一些子模块。使用 `git
 
 ## clone 含有子模块的项目
 
-`git clone <url>` 将 clone 一个项目下来，里面虽然有子模块目录，但是并没有任何文件，
+`git clone <url>` 将 `clone` 一个项目下来，里面虽然有子模块目录，但是并没有任何文件，
 你需要运行两个命令：`git submodule init` 用来初始化本地配置文件，
 `git submodule update` 从该项目中 fetch 所有数据并 check out 与父项目中列出的相应提交。
 这个命令会 clone 子模块仓库，并将其 checkout 到指定的提交。
