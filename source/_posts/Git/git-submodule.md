@@ -1,9 +1,8 @@
 ---
-date: 2023-06-21
-title: # git submodule 基本使用
-description: 在 git 仓库中，我们可以嵌入一些子模块。使用 `git submodule` 来完成这个操作。 之后在项目目录中会出现 `.gitmodules` 文件，这里存放子模块的 URL 及其在父项目中的路径。
+date: 2023-06-22
+title: git submodule 基本使用
+description: 在 git 仓库中，我们可以嵌入一些子模块。使用 git submodule 来完成这个操作。
 ---
-# git submodule 基本使用
 
 在 git 仓库中，我们可以嵌入一些子模块。使用 `git submodule` 来完成这个操作。
 
@@ -24,6 +23,10 @@ description: 在 git 仓库中，我们可以嵌入一些子模块。使用 `git
 除了上述的方式之外，还可以给 `git clone` 命令用 `--recurse-submodules` 参数。
 它会自动初始化并更新仓库中的每一个子模块。
 
+## 查看子模块
+
+`git submodule status --recursive` 会列出所有子模块。
+
 ## 子模块内容的更新
 
 子模块就是一个完整的 git 仓库，使用正常的 git 代码管理规范操作即可。
@@ -31,6 +34,8 @@ description: 在 git 仓库中，我们可以嵌入一些子模块。使用 `git
 ### 子模块的更新
 
 `git submodule update --remote` 将会从 remote 更新**所有**子模块，如果你不需要修改这个子模块，那么这样是没有问题的。
+
+在父项目中使用 `git pull` 不会合并子模块中的修改。
 
 更新之后不要忘了在父项目中提交本次更新。
 
@@ -52,4 +57,4 @@ description: 在 git 仓库中，我们可以嵌入一些子模块。使用 `git
 
 之后可以执行 `git rm <submodule-path>` 移除这个文件夹。
 
-更多内容可以查看 git book 中对 git submodule 的讲解：[git-submodule](https://git-scm.com/book/zh/v2/Git-工具-子模块)
+更多内容可以查看 Git book 中对 git submodule 的讲解：[git-submodule](https://git-scm.com/book/zh/v2/Git-工具-子模块)
