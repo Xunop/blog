@@ -1,10 +1,10 @@
 ---
 date: 2023-06-22
 title: stack unwinding
-description: 将 linux unwinding 的一些概念进行梳理。
+description: 将 linux 中的 stack unwinding 的一些概念进行梳理。
 ---
 
-将 linux unwinding 的一些概念进行梳理。
+将 linux 中的 stack unwinding 的一些概念进行梳理。
 
 ## Stack unwinding
 
