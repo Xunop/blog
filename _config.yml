@@ -123,3 +123,8 @@ feed:
   path:
     - atom.xml
     - rss2.xml
+
+      #markdown:
+      #  preset: "default"
+      #  plugins:
+      #    - markdown-it-footnote
