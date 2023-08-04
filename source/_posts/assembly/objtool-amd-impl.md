@@ -1,5 +1,5 @@
 ---
-date: 2023-08-03
+date: 2023-08-04
 title: 
 description: objtool 执行顺序：目前问题在于 decode_instructions 函数中，在这段if 判断语句中会出现问题：
 ---
@@ -63,6 +63,8 @@ struct instruction *find_insn(struct objtool_file *file,
 	list_for_each_entry(sec, &file->elf->sections, list)
 
 
+	list_for_each_entry(sym, &sec->symbol_list, list)
+
 /**
  * list_for_each_entry	-	iterate over list of given type
  * @pos:	the type * to use as a loop cursor.
@@ -72,4 +74,15 @@ struct instruction *find_insn(struct objtool_file *file,
 	for (pos = list_first_entry(head, typeof(*pos), member);	\
 	     !list_entry_is_head(pos, head, member);			\
 	     pos = list_next_entry(pos, member))
+```
+
+```c
+	for (insn = find_insn(file, _sec, 0);				\
+	     insn && insn->sec == _sec;					\
+	     insn = next_insn_same_sec(file, insn))
+
+	for (struct section *__sec, *__fake = (struct section *)1;	\
+	     __fake; __fake = NULL)					\
+		for_each_sec(file, __sec)				\
+			sec_for_each_insn(file, __sec, insn)
 ```
