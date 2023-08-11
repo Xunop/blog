@@ -1,5 +1,5 @@
 ---
-date: 2023-08-08
+date: 2023-08-11
 title: 
 description: objtool 执行顺序：目前问题在于 decode_instructions 函数中，在这段if 判断语句中会出现问题：
 ---
@@ -118,6 +118,44 @@ struct instruction *find_insn(struct objtool_file *file,
 
 查看 patch。
 
+一些信息：
+
+```c
+
+struct cfi_reg {
+	int base;
+	int offset;
+};
+
+struct cfi_init_state {
+	struct cfi_reg regs[CFI_NUM_REGS];
+	struct cfi_reg cfa;
+};
+
+struct cfi_state {
+	struct hlist_node hash; /* must be first, cficmp() */
+	struct cfi_reg regs[CFI_NUM_REGS];
+	struct cfi_reg vals[CFI_NUM_REGS];
+	struct cfi_reg cfa;
+	int stack_size;
+	int drap_reg, drap_offset;
+	unsigned char type;
+	bool bp_scratch;
+	bool drap;
+	bool signal;
+	bool end;
+};
+
+struct insn_state {
+	struct cfi_state cfi;
+	unsigned int uaccess_stack;
+	bool uaccess;
+	bool df;
+	bool noinstr;
+	s8 instr;
+};
+```
+
 关键在于`has_valid_stack_frame(struct insn_state *state)`函数：
 
 ```c
@@ -151,6 +189,13 @@ static bool has_valid_stack_frame(struct insn_state *state)
 				WARN_INSN(insn, "call without frame pointer save/setup");
 				return 1;
 			}
+```
+
+调用栈帧关系：
+
+```
+check -> validate_functions -> validate_section -> validate_section
+-> validate_branch -> has_valid_stack_frame
 ```
 
 要使这个函数返回 true，必须满足以下条件：
