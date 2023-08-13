@@ -1,5 +1,5 @@
 ---
-date: 2023-08-11
+date: 2023-08-13
 title: 
 description: objtool 执行顺序：目前问题在于 decode_instructions 函数中，在这段if 判断语句中会出现问题：
 ---
@@ -112,7 +112,38 @@ struct instruction *find_insn(struct objtool_file *file,
 
 ## unreachable instruction
 
-将 patch 13 14 15 加入回合到 kernel 中。
+```
+security/keys/gc.o: warning: objtool: key_gc_unused_keys.constprop.0+0x8c: unreachable instruction
+arch/arm64/kernel/debug-monitors.o: warning: objtool: user_enable_single_step+0x4: unreachable instruction
+ipc/util.o: warning: objtool: sysvipc_proc_open+0x50: unreachable instruction
+lib/bug.o: warning: objtool: report_bug+0x110: unreachable instruction
+```
+
+主要问题在于`static int add_dead_ends(struct objtool_file *file)`函数，
+这个函数会检测当前指令是否是`dead_end`：
+
+```c
+	/*
+	 * Check for manually annotated dead ends.
+	 */
+	sec = find_section_by_name(file->elf, ".rela.discard.unreachable");
+```
+
+如果当前的 section 不是`.rela.discard.unreachable`，则说明是`dead_end`，但是这个并不是很准确，
+所以导致了以上问题。
+
+目前解决方法是手动往`sections`中加入`.rela.discard.unreachable`:
+
+```c
+	asm volatile(__stringify_label(c) ":\n\t"			\
+			".pushsection .discard.reachable\n\t"		\
+			".long " __stringify_label(c) "b - .\n\t"		\
+			".popsection\n\t");				\
+})
+```
+
+但是目前还没排查到什么原因没有生效。
+我认为是这个宏的调用问题。
 
 ## call without frame pointer save/setup
 
@@ -194,7 +225,7 @@ static bool has_valid_stack_frame(struct insn_state *state)
 调用栈帧关系：
 
 ```
-check -> validate_functions -> validate_section -> validate_section
+check -> validate_functions -> validate_section -> validate_symbol
 -> validate_branch -> has_valid_stack_frame
 ```
 
