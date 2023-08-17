@@ -1,5 +1,6 @@
 ---
 date: 2023-07-28
+updated: 2023-08-17
 title: AARCH64 立即数范围
 description: 在tools/arch/arm64/include/asm/insn.h中存在一个立即数的枚举类，用以分析 aarch64 中的立即数的类型":"
 ---
