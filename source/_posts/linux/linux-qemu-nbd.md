@@ -1,10 +1,13 @@
 ---
 date: 2023-08-17
-title: 使用 qemu-nbd 对虚拟机进行扩容[^1]
+updated: 2023-09-30
+title: 使用 qemu-nbd 对虚拟机进行扩容
 description: 或者直接指定虚拟磁盘的大小的缩写：它是一种允许一台机器访问另一台机器上的块设备的协议。在 linux 中，这一功能由 nbd 模块实现，需要加载该模块：
 ---
 
 ## 使用 qemu-img 扩容
+
+使用 qemu-img 扩容[^1]
 
 ```sh
 qemu-img resize disk.qcow2 +10G

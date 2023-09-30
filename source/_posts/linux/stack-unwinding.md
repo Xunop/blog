@@ -1,6 +1,6 @@
 ---
 date: 2023-06-23
-updated: 2023-08-17
+updated: 2023-09-30
 title: stack unwinding
 description: 将 linux 中的 stack unwinding 的一些概念进行梳理。
 ---
