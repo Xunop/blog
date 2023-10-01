@@ -1,8 +1,15 @@
 ---
 date: 2023-06-23
-updated: 2023-09-30
+updated: 2023-10-01
 title: stack unwinding
 description: 将 linux 中的 stack unwinding 的一些概念进行梳理。
+tags:
+- linux
+- kernel
+- objtool
+
+categories:
+- [linux]
 ---
 
 将 linux 中的 stack unwinding 的一些概念进行梳理。

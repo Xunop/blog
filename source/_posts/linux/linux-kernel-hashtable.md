@@ -1,8 +1,15 @@
 ---
 date: 2023-08-17
-updated: 2023-09-30
+updated: 2023-10-01
 title: linux kernel hashtable
 description: 记录一下自己对 linux kernel 中的 hashtable 实现的理解（当然是查的资料）。因为最近写的 objtool 就有很多地方用到 hashtable，不记录一下每次去看都很烦。
+tags:
+- linux
+- kernel
+- hashtable
+
+categories:
+- [linux]
 ---
 
 记录一下自己对 linux kernel 中的 hashtable 实现的理解（当然是查的资料）。

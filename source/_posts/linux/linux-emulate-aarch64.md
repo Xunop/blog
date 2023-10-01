@@ -1,7 +1,16 @@
 ---
 date: 2023-09-30
+updated: 2023-10-01
 title: QEMU-aarch64 启动！（使用 QEMU 运行 aarch64 虚拟机）
 description:  qemu-emulators-full 会提供支持架构的全系统模拟（ 如 qemu-system-aarch64 或 qemu-x86_64 ） edk2-aarch64 提供 uefi 固件
+tags:
+- linux
+- arm64
+- virtual-machine
+- qemu
+
+categories:
+- [linux]
 ---
 
 ## 机器信息
