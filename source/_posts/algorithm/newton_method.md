@@ -5,7 +5,6 @@ categories:
 - [来点算法]
 tags:
 - 算法
-- 天马行空
 ---
 
 ![牛顿迭代法推导](https://cos.asuka-xun.cc/blog%2Fnewton_method.jpg)
