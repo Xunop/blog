@@ -1,6 +1,6 @@
 ---
 description: --- ---
-title: HTML（不建议观看）
+title: HTML [已废弃]
 date: 2022/3/20 22:27
 categories:
 - [旧时期产物]
