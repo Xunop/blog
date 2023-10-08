@@ -1,6 +1,6 @@
 ---
 description: 计算机网络学习笔记，参考《计算机网络-自顶向下方法》。 这章内容涉及许多层，相当于一个大的概括，之后才会解析每个层次的内容。
-title: 《计算机网络-自顶向下》学习笔记【更新中...】
+title: 《计算机网络-自顶向下》学习笔记
 cover: https://cos.asuka-xun.cc/blog/assets/compute-network.jpg
 date: 2022/10/23
 math: true
@@ -786,7 +786,7 @@ cookie可以用于标识一个用户。用户首次访问一个站点时，可�
 
 ![image-20221123194135945](https://cos.asuka-xun.cc//blog/image-20221123194135945.png)
 
-举例来说，假设浏览器正在请求对象 http://wwww.someschool.edu/campus.gif,将会发生如下情况：
+举例来说，假设浏览器正在请求对象 http://wwww.someschool.edu/campus.gif, 将会发生如下情况：
 1）浏览器创建一个到 Web 缓存器客户初始服务器，客户通过 Web 缓存器请求对象的 TCP 连接，并向 Web 缓存器中的对象发送一个 HTTP 请求。
 2） Web 缓存器进行检查，看看本地是否存储了该对象副本。如果有，Web缓存器就向客户浏览器用 HTTP 响应报文返回该对象。
 3） 如果 Web 缓存器中没有该对象，它就打开一个与该对象的初始服务器（即 www.someschool.edu）的 TCP 连接。Web 缓存器则在这个缓存器到服务器的 TCP 连接上发送一个对该对象的 HTTP 请求。在收到该请求后，初始服务器向该 Web 缓存器发送具有该对象的 HTTP 响应。
