@@ -1,9 +1,10 @@
 ---
 date: 2023-10-02
+updated: 2023-11-05
 title: gdb 常用操作记录
 description: gdb 有一个配置文件 .gdbinit ，可以在里面修改 gdb 配置。我的配置： 禁止分页
 tags:
-- gdb
+- gdbgdb
 
 categories:
 - [gdb]
@@ -149,3 +150,15 @@ p func
 (gdb) p offstr(insn->sec, insn->offset)
 $13 = 0x555555ea0330 "mdscr_write+0x0"
 ```
+
+### 多线程
+
+- `info inferiors` 查看进程列表
+- `attach pid`绑定进程 id
+- `inferior num` 切换到指定进程上进行调试
+- `print $_exitcode` 显示进程退出时的返回值
+- `set follow-fork-mode child` 追踪子进程
+- `set follow-fork-mode parent` 追踪父进程
+- `set detach-on-fork on fork` 调用时只追踪其中一个进程
+- `set detach-on-fork off fork` 调用时会同时追踪父子进程
+- `set schedule-multiple on` 调试某进程时，其他进程正常执行
