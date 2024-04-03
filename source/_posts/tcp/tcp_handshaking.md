@@ -1,7 +1,10 @@
 ---
 date: 2024-04-03
-title: TCP 握手
+updated: 2024-04-03
+title: TCP 握手与挥手
 description: 在网络通信中，TCP（Transmission Control Protocol）是一种可靠的传输协议，而TCP三次握手是建立TCP连接时的重要过程之一。TCP 三次握手，包括三个步骤：
+tags:
+
 categories:
 - [tcp]
 ---
