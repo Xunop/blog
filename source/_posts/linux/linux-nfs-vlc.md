@@ -1,6 +1,6 @@
 ---
 date: 2023-08-31
-updated: 2024-08-19
+updated: 2024-08-20
 title: vlc 使用 nfs 访问 linux
 description: 最近在 vlc 上将电脑的一些文件挂载到手机上，这样手机就可以看电脑上的番了。前置条件：下载安装 nfs-utils将 vlc 需要访问的文件挂载到 /srv/nfs/ 目录中：修改 /etv/exports 配置，以保证安全性，这里只允许读：
 tags:
