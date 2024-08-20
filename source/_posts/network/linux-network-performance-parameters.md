@@ -1,12 +1,15 @@
 ---
 date: 2024-08-19
+updated: 2024-08-20
 title: Linux Network sysctl parameters
 description: 1. 数据包到达 NIC":"- MAC 验证和 FCS 检查":" NIC 会检查数据包的 MAC 地址 (如果 NIC 不处于混杂模式) 和帧校验序列 (FCS)。如果 MAC 地址不匹配或 FCS 检查失败，数据包会被丢弃。
+tags:
+
 categories:
 - [network]
 ---
 
-## In Process
+## In Process（收数据包）
 
 1. 数据包到达 NIC:
 
