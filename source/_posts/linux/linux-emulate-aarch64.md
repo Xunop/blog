@@ -1,8 +1,8 @@
 ---
 date: 2023-09-30
-updated: 2024-08-20
+updated: 2024-08-21
 title: QEMU-aarch64 启动！（使用 QEMU 运行 aarch64 虚拟机）
-description:  qemu-emulators-full 会提供支持架构的全系统模拟（ 如 qemu-system-aarch64 或 qemu-x86_64 ） edk2-aarch64 提供 uefi 固件
+description:  qemu-emulators-full 会提供支持架构的全系统模拟（如 qemu-system-aarch64 或 qemu-x86_64 ） edk2-aarch64 提供 uefi 固件
 tags:
 - linux
 - arm64
@@ -29,7 +29,7 @@ OS: linux-gnu | Vendor: pc | Machine: x86_64 | CPU: x86_64 | Processor: unknown 
 sudo pacman -S edk2-aarch64 qemu-system-aarch64
 ```
 
-> `qemu-emulators-full` 会提供支持架构的全系统模拟（ 如 `qemu-system-aarch64` 或 `qemu-x86_64` ）
+> `qemu-emulators-full` 会提供支持架构的全系统模拟（如 `qemu-system-aarch64` 或 `qemu-x86_64` ）
 > `edk2-aarch64` 提供 uefi 固件
 
 ## 创建 flash 镜像
@@ -93,25 +93,25 @@ virt-install \
 virsh list
 ```
 
-开启虚拟机 vm ：
+开启虚拟机 vm：
 
 ```sh
 virsh start vm
 ```
 
-关闭虚拟机 vm ：
+关闭虚拟机 vm：
 
 ```sh
 virsh shutdown vm
 ```
 
-强制关闭虚拟机 vm ：
+强制关闭虚拟机 vm：
 
 ```sh
 virsh destroy vm
 ```
 
-删除虚拟机 vm ：
+删除虚拟机 vm：
 
 ```sh
 virsh undefine vm

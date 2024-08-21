@@ -1,7 +1,11 @@
 ---
 date: 2024-02-29
+updated: 2024-08-21
 title: 23 年写的一些小脚本合集
 description: 在这里稍微记录一下 23 年自己写的我觉得有意思的脚本。
+tags:
+- scripts
+
 categories:
 - [interesting-things]
 ---
@@ -75,4 +79,4 @@ Links: https://github.com/Xunop/dwn-songs
 
 这段代码很简单，就是发送几个请求，但是能用到自己学到的东西帮到身边的人还挺有意思的。
 
-平时写的脚本还挺多的，大部分都是配合自己的电脑使用（因为用的是 Hyprland ，欢迎尝试），脚本应该都是在我的 `dotfile` 里面。
+平时写的脚本还挺多的，大部分都是配合自己的电脑使用（因为用的是 Hyprland，欢迎尝试），脚本应该都是在我的 `dotfile` 里面。

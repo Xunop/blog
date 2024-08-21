@@ -1,16 +1,16 @@
 ---
 date: 2023-10-02
-updated: 2023-11-05
+updated: 2024-08-21
 title: gdb 常用操作记录
 description: gdb 有一个配置文件 .gdbinit ，可以在里面修改 gdb 配置。我的配置： 禁止分页
 tags:
-- gdbgdb
+- gdbgdbgdb
 
 categories:
 - [gdb]
 ---
 
-因为写了一段时间内核中的 objtool ，出现一些问题时需要使用 gdb 进行调试。这里记录一下自己的常用操作。学习建议还是看 [gdb manual](https://sourceware.org/gdb/current/onlinedocs/gdb.html/)，这是一点点笔记，gdb 的使用那可真是太多了。
+因为写了一段时间内核中的 objtool，出现一些问题时需要使用 gdb 进行调试。这里记录一下自己的常用操作。学习建议还是看 [gdb manual](https://sourceware.org/gdb/current/onlinedocs/gdb.html/)，这是一点点笔记，gdb 的使用那可真是太多了。
 
 ## gdb 配置
 
@@ -52,7 +52,7 @@ b func
 
 ### 栈帧
 
-查看栈帧（ backtrace/bt ）：
+查看栈帧（backtrace/bt）：
 
 ```sh
 bt num

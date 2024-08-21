@@ -1,8 +1,12 @@
 ---
 date: 2023-08-16
-updated: 2023-08-17
+updated: 2024-08-21
 title: Objtool 迁移的一些记录
 description: objtool 执行顺序：目前问题在于 decode_instructions 函数中，在这段if 判断语句中会出现问题：
+tags:
+
+categories:
+- [assembly]
 ---
 
 objtool 执行顺序：
@@ -284,10 +288,14 @@ check -> validate_functions -> validate_section -> validate_symbol
    > 是否符合预期的要求：
    >
    > - 帧指针 FP 应该位于 CFA 的负偏移量位置。
-   > - 返回地址寄存器 LR 应该与 CFA 的负偏移量+8 的位置。
+   > - 返回地址寄存器 LR 应该与 CFA 的负偏移量 +8 的位置。
    >
    >   此处就是正常的函数调用栈帧的变化，在其它笔记中有说明。
 2. 如果存在 drap（可能是某种标志位，暂时没查），并且帧指针的基址与 CFI_BP 相等，那么函数也会返回 true。
+
+主要问题：
+
+没有成功计算出 `cfi->cfa.base` 的值，这个值应该要转换成 `CFI_BP` 的值。
 
 ## unannotated intra-function
 
