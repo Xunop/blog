@@ -1,7 +1,10 @@
 ---
 date: 2024-08-30
+updated: 2024-08-30
 title: MSS、MTU 和 TCP 拥塞堵塞
 description: 一个 MTU 最大 1500 bytes，如果超过这个数量则会被分片。如果将数据包比作运输卡车，标头是卡车本身，有效负载是拖车和货物，那么 MSS 就像只测量拖车的秤。如果拖车过重，则不允许卡车继续前往目的地。
+tags:
+
 categories:
 - [network]
 ---
