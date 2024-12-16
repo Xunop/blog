@@ -1,7 +1,10 @@
 ---
 date: 2024-12-16
+updated: 2024-12-16
 title: Samsung S24 和 Samsung Watch 5 国行刷外版系统（可能通用）
 description: Samsung 设备更改其他地区系统时需要退出 Google 账号和 Samsung 账号。
+tags:
+
 categories:
 - [phone]
 ---
