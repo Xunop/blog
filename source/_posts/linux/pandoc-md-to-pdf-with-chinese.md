@@ -1,6 +1,6 @@
 ---
 date: 2024-11-24
-updated: 2024-11-24
+updated: 2024-12-16
 title: 使用 Pandoc 把 Markdown 转为 PDF 文件
 description: 在 Arch Linux 上使用 Pandoc 把带中文的 Markdown 转换成 PDF。
 categories:
