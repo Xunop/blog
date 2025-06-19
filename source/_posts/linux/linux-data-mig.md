@@ -1,6 +1,6 @@
 ---
 date: 2023-06-22
-updated: 2024-12-16
+updated: 2025-06-19
 title: linux 服务器数据迁移
 description: 前段时间把社团服务器上的数据进行了迁移，这里记录一下大概的迁移方式。管道的妙用。ssh 配合 tar 直接将文件传到我本机电脑：附上 exclude.txt 文件：
 tags:
