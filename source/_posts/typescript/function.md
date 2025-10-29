@@ -1,7 +1,10 @@
 ---
 date: 2025-10-29
+updated: 2025-10-29
 title: TypeScript 函数定义
 description: 写 ts 写得比较少，也不是持续的写，外加上 LLM 的帮助，对于 ts 的语法是有些怠惰了，这里整理下 ts 的函数定义。 加上自己对于各种东西都是够用就行，所以...
+tags:
+
 categories:
 - [typescript]
 ---
@@ -115,7 +118,7 @@ export const createEntity<T extends ...> = (data: ...) => { ... };
 
 **方式三：对象方法 + 泛型**
 
-泛型语法: 泛型 `<T>` 放在方法名之后，参数列表之前。
+泛型语法：泛型 `<T>` 放在方法名之后，参数列表之前。
 
 ```TypeScript
 
